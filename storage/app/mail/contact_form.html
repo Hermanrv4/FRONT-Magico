@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>[<|TITULO|>]</title>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            .container{
+                width:650px!important;
+                display: inline-block;
+            }
+            .cont-header{}
+            .cont-body{
+                margin-top: 32px;
+                text-align: left;
+            }
+            .img-social{
+                width:24px;
+                height:24px;
+                margin:8px;
+            }
+            .vertical-middle{
+                display: table-cell;
+                vertical-align: middle!important;
+                justify-content: center!important;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width: 100%;text-align: center;">
+            <div class="container">
+                <div class="cont-header"></div>
+                <div class="cont-body">
+                    <h1>Estimado administrador,</h1>
+                    <p>¡En hora buena!, un cliente ha enviado un formulario de contacto</p>
+                    <p>Los datos ingresados por el cliente son los siguientes: </p>
+                    <div class="row col-md-12">
+                        <ul>
+                            <li><b>Nombres :</b>[<|CONTACT_NAMES|>]</li>
+                            <li><b>Correo :</b>[<|CONTACT_MAIL|>]</li>
+                            <li><b>Teléfono :</b>[<|CONTACT_PHONE|>]</li>
+                            <li><b>Mensaje :</b>[<|CONTACT_MESSAGE|>]</li>
+                        </ul>
+                    </div>
+                    <br/>
+                    <br/>
+                    <p>
+                        Un cordial saludo,<br>
+                        <b>Equipo de [<|EMPRESA|>]</b><br>
+                        <a href="[<|WEB|>]" target="_blank">Volver a la página de [<|EMPRESA|>]</a>
+                    </p>
+                </div>
+                <hr/>
+                <div style="text-align: center!important;">
+                    <a href="[<|INSTAGRAM|>]" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-instagram-48.png" class="img-social"></a>
+                    <a href="[<|WEB|>]" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" class="img-social"></a>
+                    <a href="[<|TWITTER|>]" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-twitter-48.png" class="img-social"></a>
+                    <a href="[<|FACEBOOK|>]" target="_blank"><img src="https://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" class="img-social"></a>
+                </div>
+                <hr/>
+                <p style="text-align: center;" class="label">Copyright © [<|AÑO|>] [<|EMPRESA|>], todos los derechos reservados.</p>
+            </div>
+        </div>
+    </body>
+</html>
